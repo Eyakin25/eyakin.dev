@@ -14,6 +14,7 @@
   <meta name="author" content="Eyakin Hossain">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/contact.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400&family=Roboto" rel="stylesheet">
@@ -135,6 +136,32 @@
         </p>
       </div>
 
+      <div class="contact-container" id="contact">
+        <h2>Contact me</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="name@gmail.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 585XX XXXXX">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Let us know how we can help you" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Leave a comment..."></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
+      </div>
       <div class="bottom" id="contact">
         <h1>
           Contact Me
@@ -190,4 +217,3 @@
       </div>
       <script defer src="scripts/main.js"></script>
     </body>
-
