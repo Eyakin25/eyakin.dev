@@ -9,6 +9,7 @@
   --logo: #FFFFEA;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
+  --text-secondary: #dfdbe5;
   --transition-speed: 300ms;
 }
 
@@ -57,6 +58,7 @@ h1 {
 .lang {
   background-image:
   linear-gradient(33deg, #D7FCD4, #BAD9B5, #EDFF86, #FE938C, #D4F5F5);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow-animation 23s linear infinite;
@@ -152,7 +154,6 @@ h1 {
   background-color: #E7E5DF;
   color: var(--dark);
   --logo: var(--dark);
-  --foot:;
   --foot-text: var(--off-white);
 }
 
@@ -218,7 +219,9 @@ body {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1000;
 }
 
 .navbar-nav {
